@@ -302,8 +302,8 @@
 
 // Auto detect memory
 #ifdef CONFIG_ACS
-	#define CONFIG_DDR_MODE_AUTO_DETECT		// Auto detect DDR bus-width
-	#define CONFIG_DDR_SIZE_AUTO_DETECT		// Auto detect DDR size
+	//#define CONFIG_DDR_MODE_AUTO_DETECT		// Auto detect DDR bus-width
+	//#define CONFIG_DDR_SIZE_AUTO_DETECT		// Auto detect DDR size
 #endif
 
 // Dump ddr info
@@ -316,9 +316,9 @@
 
 // DDR clock: 408~804MHz with fixed step 12MHz
 // #define CFG_DDR_CLK		(636)
-#define CFG_DDR_CLK			(696)
+//#define CFG_DDR_CLK			(696)
 // #define CFG_DDR_CLK		(768)
-// #define CFG_DDR_CLK		(792)
+#define CFG_DDR_CLK		(792)
 #define CFG_DDR_MODE		(CFG_DDR_32BIT)
 
 // DDR features
