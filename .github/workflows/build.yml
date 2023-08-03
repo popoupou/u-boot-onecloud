@@ -13,8 +13,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt upgrade
-          sudo apt install make imagemagick ttf-dejavu
+          sudo apt install make imagemagick
 
       - name: Download toolchain
         run: |
