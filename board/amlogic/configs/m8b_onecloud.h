@@ -274,7 +274,7 @@
 //                                      CPU
 // =============================================================================
 // CPU clock (unit: MHz)
-// #define M8_CPU_CLK		(600)
+// #define M8_CPU_CLK		(600)q
 #define M8_CPU_CLK			(792)
 // #define M8_CPU_CLK		(996)
 // #define M8_CPU_CLK		(1200)
