@@ -295,10 +295,18 @@
 // =============================================================================
 // Memory size
 #define PHYS_MEMORY_START		(0x00000000)
-#define PHYS_MEMORY_SIZE		(0x80000000)
-#define CONFIG_DDR3_ROW_SIZE	(3)
+//#define PHYS_MEMORY_SIZE		(0x40000000) //1GB 256M16x2
+#define PHYS_MEMORY_SIZE		(0x80000000) //2GB 512M16x2
+
+//1GB 配置
+//#define CONFIG_DDR3_ROW_SIZE	(3)
+//#define CONFIG_DDR3_COL_SIZE	(2)
+//#define CONFIG_DDR_ROW_BITS	(15)
+
+//2GB 配置
+#define CONFIG_DDR3_ROW_SIZE	(0)
 #define CONFIG_DDR3_COL_SIZE	(2)
-#define CONFIG_DDR_ROW_BITS		(15)
+#define CONFIG_DDR_ROW_BITS	    (16)
 
 // Auto detect memory
 #ifdef CONFIG_ACS
@@ -316,7 +324,7 @@
 
 // DDR clock: 408~804MHz with fixed step 12MHz
 // #define CFG_DDR_CLK		(636)
-//#define CFG_DDR_CLK			(696)
+// #define CFG_DDR_CLK			(696)
 // #define CFG_DDR_CLK		(768)
 #define CFG_DDR_CLK		(792)
 #define CFG_DDR_MODE		(CFG_DDR_32BIT)
